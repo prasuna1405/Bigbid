@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BigBid - Online Auction Platform</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- 🧭 Updated Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./images/Bigbid logo.png" alt="BigBid Icon" width="45" height="45" class="me-1">
+                <span class="fw-bold fs-3">BigBid</span>
+            </a>
+
+    
+            <div class="d-flex align-items-center gap-3">
+                <a class="text-white text-decoration-none" href="login.html">Login</a>
+    
+                <div class="dropdown">
+                    <a class="text-white dropdown-toggle d-flex align-items-center" href="#" role="button"
+                        id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle fs-4"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <li><a class="dropdown-item" href="dashboard.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 🎯 Hero Section -->
+    <section class="py-5 text-center bg-light hero">
+        <div class="container">
+            <h1 class="display-4">Welcome to BigBid</h1>
+            <p class="lead">Bid. Win. Own. The future of online auctions is here!</p>
+            <a href="auction.html" class="btn btn-primary btn-lg">Sign up</a>
+        </div>
+    </section>
+
+    <!-- 💎 Featured Auctions -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Auctions</h2>
+        <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+        
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <!-- Auction Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="./images/smart watch.webp" class="card-img-top" alt="Smart Watch">
+                                <div class="card-body">
+                                    <h5 class="card-title">Smart Watch</h5>
+                                    <p class="card-text">Current Bid: ₹2,000</p>
+                                    <a href="product.html" class="btn btn-outline-primary w-100">View & Bid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <!-- Auction Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="./images/wireless headphones.avif" class="card-img-top" alt="Wireless Headphones">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wireless Headphones</h5>
+                                    <p class="card-text">Current Bid: ₹1,500</p>
+                                    <a href="product.html" class="btn btn-outline-primary w-100">View & Bid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <!-- Auction Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="./images/gaming mouse.jpg" class="card-img-top" alt="Gaming Mouse">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gaming Mouse</h5>
+                                    <p class="card-text">Current Bid: ₹800</p>
+                                    <a href="product.html" class="btn btn-outline-primary w-100">View & Bid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+            </button>
+        </div>
+
+        </div>
+    </section>
+    <!-- 🔴 Live Auctions -->
+<section class="py-5 bg-light" class="auction-section>
+  <div class="container">
+    <h2 class="mb-4 text-center">🔥 Live Auctions</h2>
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="./images/smart watch.webp" class="card-img-top" alt="Live Auction 1">
+          <div class="card-body">
+            <h5 class="card-title">Smart Watch</h5>
+            <p class="card-text">Current Bid: ₹2,000<br>Ends in: 1h 20m</p>
+            <a href="product.html" class="btn btn-outline-danger w-100">Bid Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="./images/bluetooth speaker.webp" class="card-img-top" alt="Live Auction 2">
+          <div class="card-body">
+            <h5 class="card-title">Bluetooth Speaker</h5>
+            <p class="card-text">Current Bid: ₹1,100<br>Ends in: 50m</p>
+            <a href="product.html" class="btn btn-outline-danger w-100">Bid Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ⏳ Upcoming Auctions -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">⏳ Upcoming Auctions</h2>
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="./images/gaming keyboard.jpg" class="card-img-top" alt="Upcoming Auction 1">
+          <div class="card-body">
+            <h5 class="card-title">Gaming Keyboard</h5>
+            <p class="card-text">Starts in: 2h</p>
+            <button class="btn btn-secondary w-100" disabled>Coming Soon</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="./images/drone camera.jpg" class="card-img-top" alt="Upcoming Auction 2">
+          <div class="card-body">
+            <h5 class="card-title">Drone Camera</h5>
+            <p class="card-text">Starts in: 4h</p>
+            <button class="btn btn-secondary w-100" disabled>Coming Soon</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Closed Auctions -->
+<section class="py-5 bg-light" class="auction-section>
+  <div class="container">
+    <h2 class="mb-4 text-center">✅ Closed Auctions</h2>
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-secondary">
+          <img src="img/product6.jpg" class="card-img-top" alt="Closed Auction 1">
+          <div class="card-body">
+            <h5 class="card-title">Noise Cancelling Headphones</h5>
+            <p class="card-text">Final Bid: ₹3,200<br>Closed: 1 hour ago</p>
+            <button class="btn btn-outline-secondary w-100" disabled>Auction Closed</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-secondary">
+          <img src="img/product7.jpg" class="card-img-top" alt="Closed Auction 2">
+          <div class="card-body">
+            <h5 class="card-title">Fitness Tracker</h5>
+            <p class="card-text">Final Bid: ₹1,750<br>Closed: Yesterday</p>
+            <button class="btn btn-outline-secondary w-100" disabled>Auction Closed</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 📞 Footer -->
+<footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-4 mb-3">
+                <h5>About BigBid</h5>
+                <p>BigBid is your go-to platform for live online auctions. Bid smart. Win big.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="auction.html" class="text-white text-decoration-none">Auctions</a></li>
+                    <li><a href="login.html" class="text-white text-decoration-none">Login</a></li>
+                    <li><a href="signup.html" class="text-white text-decoration-none">Sign Up</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <p>Email: <a href="mailto:support@bigbid.com"
+                        class="text-white text-decoration-none">support@bigbid.com</a></p>
+                <p>Phone: +91-9876543210</p>
+                <div class="mt-2">
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <div class="text-center">
+            <small>&copy; 2025 BigBid. All rights reserved.</small>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

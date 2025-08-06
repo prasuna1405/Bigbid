@@ -1,0 +1,179 @@
+/* style.css */
+
+/* General reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar customization */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff6600;
+    /* BigBid orange */
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+/* Login link */
+.navbar a {
+    font-weight: 500;
+    color: #333;
+}
+
+.navbar a:hover {
+    color: #ff6600;
+}
+
+/* Profile icon */
+.navbar .dropdown-toggle {
+    padding: 4px;
+}
+
+.dropdown-menu {
+    font-size: 0.95rem;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
+
+/* Orange BigBid-style button */
+.btn-primary {
+    background-color: #ff6600;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e65500;
+    color: white;
+}
+/* Import a unique Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #fff5e6, #ffe0cc);
+    /* Very light orange gradient */
+    height: 100vh;
+    padding-top: 80px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Text Styling */
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #444;
+}
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #ffeedd, #fddfc5);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 100px 20px 60px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Auction Section Background and Padding */
+.auction-section {
+    background-color: #f0f0f0;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+/* Center-align carousel row content */
+.carousel-item .row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Card Styling */
+.card {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Responsive Image Styling */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+    .card-img-top {
+        max-height: 180px;
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 576px) {
+    .card-img-top {
+        max-height: 150px;
+    }
+}
